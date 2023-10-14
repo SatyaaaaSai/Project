@@ -55,7 +55,7 @@
     height:100%;
 
 }
-/* .main-container{
+.main-container{
    padding: 10px;
    position:relative;
    float: left;
@@ -68,21 +68,7 @@
     background-color: aqua;
     flex-direction: row;
     align-items: center;
-} */
-.main-container {
-    padding: 10px;
-    margin: 30px;
-    display: inline-block; /* Change to inline-block */
-  }
-  
-  .container {
-    width: 250px;
-    height: 250px;
-    background-color: aqua;
-    display: inline-block; /* Add inline-block to .container */
-    vertical-align: top; /* Align the containers to the top */
-  }
-  
+}
 .conatiner:hover{
     border:3px solid rgb(215, 16, 16);
     cursor: pointer;
