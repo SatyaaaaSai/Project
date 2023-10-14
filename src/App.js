@@ -1,33 +1,36 @@
 import React from "react";
-import  ReactDOM  from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import ImageSlider from "./components/ImageSlider";
+import Container from "./components/Categories";
 /**
  *  --Header
  *    -Logo
- *    -NavBar 
+ *    -NavBar
  *  --Images
  *     -Sldeshow
  *  --Categories
  *     -Food
  *     -Accesories
  *     -Essentials
- *   
- *  --Footer  
+ *
+ *  --Footer
  *    -Links
  *    -Copyrights
- * 
+ *
  */
 
 const AppLayout = () => {
-    return(
-        <div>
-            <Header />
-            <ImageSlider/>
-        </div>
-    );
-  
+  return (
+    <div>
+      <Header />
+      <ImageSlider />
+      <Container />
+      <Container />
+      <Container />
+    </div>
+  );
 };
 
-const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);

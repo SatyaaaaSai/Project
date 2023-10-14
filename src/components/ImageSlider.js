@@ -25,25 +25,24 @@ const ImageSlider = () => {
         break;
     }
 
-    if(forward){
-        for (let i = 0; i < 3; i++) {
-         setTimeout(() => {
-            if(count==2){
-                setforward(false);
-            } else {
-                setcount(count+1);
-                setImage(count)
-            }
-         }, 1000);
-            
-        }
+    if (forward) {
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+          if (count == 2) {
+            setforward(false);
+          } else {
+            setcount(count + 1);
+            setImage(count);
+          }
+        }, 1000);
+      }
     }
   }
   return (
     <React.Fragment>
       <div className="caurosel-container">
         <div className="image-container">
-          <div className="image image1" style={{marginLeft:''}}>
+          <div className="image image1" style={{ marginLeft: "" }}>
             <img alt="img 1" src={slide1} />
           </div>
           <div className="image">
